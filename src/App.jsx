@@ -4,6 +4,7 @@ import SocialLinks from "./components/SocialLinks"
 import About from "./components/About"
 import Portfolio from "./components/Portfolio"
 import Tech from "./components/Tech"
+import Contact from "./components/Contact"
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <About/>
     <Portfolio/>
     <Tech/>
+    <Contact/>
     </>
   )
 }

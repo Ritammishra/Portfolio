@@ -1,6 +1,7 @@
 import React from "react";
 import img from "../assets/hero.jpg";
 import { AiOutlineArrowRight } from "react-icons/ai";
+import {Link} from 'react-scroll'
 
 const Home = () => {
   return (
@@ -8,30 +9,26 @@ const Home = () => {
       name="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row text-white ">
-        <div className="mt-28 md:mt-0 flex flex-col justify-center h-full">
-          <h2 className="text-4xl md:text-7xl font-bold">
-            I'm a Full stack Developer
+      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row md:pt-14 ">
+        <div className="flex flex-col justify-center h-full">
+          <h2 className="text-4xl md:text-7xl font-bold text-white">
+            I'm a Frontend Developer
           </h2>
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse iste
-            omnis quia aperiam. Dignissimos quod alias ducimus incidunt atque
-            laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Maxime, saepe. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Quasi beatae accusamus repudiandae doloribus, magni unde.
+          <p className="text-gray-200 py-4 max-w-md">
+          Crafting Seamless Digital Experiences with Code Magic.
           </p>
           <div>
-            <button className="group text-white w-fit px-6 py-3 my-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+            <Link to="portfolio" smooth duration={500} className="group text-white w-fit px-6 py-3 my-3 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
               Portfolio
               <span className="group-hover:rotate-90 duration-300 ml-2">
                 <AiOutlineArrowRight />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
-        <div>
+        <div className="">
           <img
-            className="rounded-2xl mx-auto w-2/4 md:w-3/4"
+            className="rounded mx-auto w-2/3 md:w-2/3"
             src={img}
             alt="myimage"
           />
